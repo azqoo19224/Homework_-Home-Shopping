@@ -1,0 +1,18 @@
+use test;
+
+drop table Lab;
+
+create table Lab
+(
+  id int auto_increment primary key,
+  name varchar(10) not null,
+  data varchar(5) not null
+  ,time varchar(5) not null,monny int not null
+);
+insert into Lab (name,data,time,monny) values ('Tom','food','12:00',100);
+insert into Lab (name,data,time,monny) values ('Father','water','13:00',50);
+insert into Lab (name,data,time,monny) values ('Mother','clothes','17:00',1500);
+insert into Lab (name,data,time,monny) values ('Sister','food','12:00',2000);
+insert into Lab (name,data,time,monny) values ('brother','food','12:01',95);
+
+select * from Lab;
